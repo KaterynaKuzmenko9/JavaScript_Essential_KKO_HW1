@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--     Завдання:
+        Виправте сценарій так, щоб окрім зміни кольору div#color-sample у параграфі під div виводилося повідомлення
+        Колір: #000000
+        Де #000000 значення кольору фону елемента div#color-sample -->
+</head>
+<body>
+    <script>
+          let colorSampleDiv = document.querySelector("#color-sample");
+        let colorValueSpan = document.querySelector("#color-value");
+
+        
+        let randomColor = getRandomColor();
+        colorSampleDiv.style.backgroundColor = randomColor;
+
+     
+        colorValueSpan.textContent = randomColor;
+    </script>
+</body>
+</html>
